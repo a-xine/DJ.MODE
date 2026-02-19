@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DJ>MODE</title>
+    <!--this is a google font link for a pixelated font-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><!--this links to our style.css-->
+</head>
+<body>
+
+    <div id="close-btn-container">
+        <button id="close-btn">X</button><!--this button will be used to close the application-->
+    </div>
+
+    <div class="main-player-wrapper">
+        <h1 id="app-title">DJ.MODE</h1>
+        <h3 id="song-title">NO TRACK LOADED</h3><!--default text-->
+
+        <div class="progress-container" id="progress-container">
+            <div class="progress-bar" id="progress-bar"></div><!--this will be updated by our script.js-->
+        </div>
+
+        <div class="control-group">
+            <button id="prev-btn" class="ctrl-btn">PREV</button>
+            <button id="play-pause-btn" class="ctrl-btn main-btn">PLAY</button>
+            <button id="next-btn" class="ctrl-btn">NEXT</button><!--these buttons will be handled by our script.js-->
+        </div>
+
+        <button id="upload">LOAD PLAYLIST</button><!--this button will open a file dialog to load a playlist-->
+    </div>
+
+<audio id="audio-player"></audio><!--this will be our audio player-->
+    <script src="script.js"></script><!--this links to our script.js that will handle the logic of our player-->
+</body>
+</html>

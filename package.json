@@ -1,0 +1,13 @@
+{
+  "name": "dj.mode",
+  "version": "1.0.0",
+  "description": "A simple music player built with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start":"electron ." 
+  },
+  "keywords": ["music", "player", "electron","dj.mode"],
+  "author": "nat and yannie",
+  "license": "ISC",
+  "type": "commonjs"
+}

@@ -1,0 +1,140 @@
+
+body { 
+    font-family: 'Press Start 2P', cursive; 
+    background-color: #011638; 
+    color: #EFF0F2;
+    user-select: none;/*prevents text selection while dragging*/
+    border-radius: 3px;
+    overflow: hidden;
+    border: 3px solid #EEC643;
+/* this centers the content vertically and horizontally */
+    padding: 0; 
+    margin: 0;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;
+    box-sizing: border-box;    
+          
+    -webkit-app-region: drag; /*allows you to drag the window by clicking anywhere*/   
+}
+.main-player-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#close-btn-container {   /*this keeps the close button on the top right corner*/
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    -webkit-app-region: drag;
+    z-index: 10;
+}
+
+#close-btn {
+    background:none; 
+    color: #EEC643; 
+    border:none; 
+    cursor:pointer;/*this makes the cursor a pointer when hovering over the buttons*/
+    font-weight: bold;
+    -webkit-app-region: no-drag;
+}
+
+#close-btn:hover {
+    color: #ffe347;
+}
+
+.progress-container {
+    background: #13284b;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 6px;
+    width: 70%;
+    -webkit-app-region: no-drag;
+}
+
+.progress-bar {
+    background: linear-gradient(to right, #EEC643,#ecd893);
+    border-radius: 5px;
+    height: 100%;
+    width: 0%; /*this will be updated dynamically with our script.js*/
+    box-shadow: 0 0 10px #0D21A1;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;/*this adds space between the buttons*/
+    margin: 10px 0;
+    -webkit-app-region: no-drag;
+}
+
+.ctrl-btn {
+    background: #EEC643;
+    border: 1px solid #0D21A1;
+    color: #011638;
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px;
+    font-size: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-app-region: no-drag;
+}
+
+.main-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 10px;
+    background: #EEC643;
+    box-shadow: 0 0 15px #011638;
+}
+
+.ctrl-btn:hover {
+    transform: scale(1.1);/*this makes the buttons grow when hovered*/
+    box-shadow: 0 0 20px #0D21A1;
+    background: #ffe347;
+}
+
+#upload {
+    background: transparent;
+    border: 1px dashed #EEC643;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 10px;
+    color: #d6af2e;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    margin-top: 5px;
+}
+
+#app-title {
+    font-size: 25px;
+    letter-spacing: 2px;
+    color:#EEC643;
+    margin: 5px 0;
+}
+
+#song-title {
+    font-size: 15px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;/*this will add "..." if the title is too long*/
+    line-height: 1.5;
+}
+
+audio { display: none; }/*this hides the default audio controls 
+                        since we are making our own custom controls*/
