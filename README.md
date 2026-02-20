@@ -11,17 +11,20 @@ Installation & Setup
 
 Clone the Repository
 Bash
-    git clone https://github.com/YOUR_USERNAME/DJ.MOD.git
-    cd DJ.MOD
+
+    git clone git@github.com:a-xine/DJ.MODE.git
+    cd DJ.MODE
     
 Install Dependencies
 This will install Electron and any other required libraries.
 
 Bash
+
     npm install
     
 Run the App
 Launch the music player in development mode.
 
 Bash
-  npm start
+        
+        npm start
