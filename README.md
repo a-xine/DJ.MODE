@@ -3,7 +3,7 @@ To run DJ.MOD on your local machine, follow these steps.
 Prerequisites
 Before you begin, ensure you have the following installed:
 
-Node.js (v18.0.0 or higher) — Download here
+Node.js (v18.0.0 or higher) — Download here https://nodejs.org/en 
 NPM (Included with Node.js)
 Git (Optional, for cloning)
 
