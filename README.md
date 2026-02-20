@@ -1,4 +1,4 @@
-To run DJ.MOD on your local machine, follow these steps.
+To run DJ.MODE on your local machine, follow these steps.
 
 Prerequisites
 Before you begin, ensure you have the following installed:
